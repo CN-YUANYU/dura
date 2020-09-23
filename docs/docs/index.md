@@ -21,7 +21,7 @@ features:
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
 
-# Next-generation dura development plan (dura 4)
+# Next-generation dura development plan (dura 4)1
 
 - 😺 More friendly ts type deduction
 - 😁 Complete dependency collection
