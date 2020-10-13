@@ -17,7 +17,7 @@ const App = () => {
       <Button
         type="primary"
         onClick={onClick}
-        loading={state.DURA.LOADING?.user?.onAsyncQuery?.status}
+        loading={state.D.LOADING?.user?.onAsyncQuery?.status}
       >
         修改
       </Button>

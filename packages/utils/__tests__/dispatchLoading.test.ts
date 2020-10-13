@@ -7,7 +7,7 @@ describe('test throttleDispatch', function () {
     let loading = {};
     const reduxStore = {
       dispatch: function (action) {
-        if (action.type === 'DURA/CHANGE_LOADING') {
+        if (action.type === 'D/CHANGE_LOADING') {
           loading[action.payload.k] = action.payload.v;
         }
       },
@@ -38,7 +38,7 @@ describe('test throttleDispatch', function () {
     const id = 12;
     const reduxStore = {
       dispatch: function (action) {
-        if (action.type === 'DURA/CHANGE_LOADING') {
+        if (action.type === 'D/CHANGE_LOADING') {
           loading[action.payload.k] = action.payload.v;
         }
       },
@@ -67,7 +67,7 @@ describe('test throttleDispatch', function () {
     let loading = {};
     const reduxStore = {
       dispatch: function (action) {
-        if (action.type === 'DURA/CHANGE_LOADING') {
+        if (action.type === 'D/CHANGE_LOADING') {
           loading[action.payload.k] = action.payload.v;
         }
       },

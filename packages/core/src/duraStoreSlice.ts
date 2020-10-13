@@ -3,7 +3,7 @@ import { Action } from '@dura/types';
 import { set } from '@dura/utils';
 
 export default defineStoreSlice({
-  namespace: 'DURA',
+  namespace: 'D',
   state: {
     REFRESH: '0',
     LOADING: {},

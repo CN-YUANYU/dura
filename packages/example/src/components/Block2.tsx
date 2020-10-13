@@ -35,7 +35,7 @@ export default memo(function Block2(props) {
 
   const state = store.useStore();
 
-  console.log('block2', state.DURA.LOADING?.user?.onAsyncQuery?.status);
+  console.log('block2', state.D.LOADING?.user?.onAsyncQuery?.status);
   return (
     <div
       style={{
@@ -55,7 +55,7 @@ export default memo(function Block2(props) {
 
       <Button
         type="primary"
-        loading={state.DURA.LOADING?.user?.onAsyncQuery?.status}
+        loading={state.D.LOADING?.user?.onAsyncQuery?.status}
         onClick={onClickAsync}
         shape="round"
       >

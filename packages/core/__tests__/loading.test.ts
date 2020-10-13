@@ -35,12 +35,12 @@ describe('test core loading', function () {
       },
     });
     expect(
-      store.getState().DURA.LOADING.user.onAsyncQuery.customize[id].status,
+      store.getState().D.LOADING.user.onAsyncQuery.customize[id].status,
     ).toBeTruthy();
 
     setTimeout(() => {
       expect(
-        store.getState().DURA.LOADING.user.onAsyncQuery.customize[id].status,
+        store.getState().D.LOADING.user.onAsyncQuery.customize[id].status,
       ).toBeFalsy();
       done();
     }, 501);
@@ -51,10 +51,10 @@ describe('test core loading', function () {
     const store = createStore(user);
 
     store.actions.user.onAsyncQuery(null, { loading: true });
-    expect(store.getState().DURA.LOADING.user.onAsyncQuery.status).toBeTruthy();
+    expect(store.getState().D.LOADING.user.onAsyncQuery.status).toBeTruthy();
     setTimeout(() => {
       expect(
-        store.getState().DURA.LOADING.user.onAsyncQuery.status,
+        store.getState().D.LOADING.user.onAsyncQuery.status,
       ).toBeFalsy();
       done();
     }, 501);

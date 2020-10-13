@@ -54,7 +54,7 @@ export function configura(options?: ConfiguraOptions) {
     STORES extends StoreSlice<N, S, R, E>[] = StoreSlice<N, S, R, E>[],
     GA = UnionToIntersection<ExtractAction<STORES[number]>>,
     GS = UnionToIntersection<ExtractStateByStoreUnion<STORES[number]>> & {
-      DURA: {
+      D: {
         LOADING: UnionToIntersection<ExtractLoadingTypes<STORES[number]>>;
       };
     }
@@ -153,7 +153,7 @@ export function configura(options?: ConfiguraOptions) {
 
     function refresh(prefix: string) {
       reduxStore.dispatch({
-        type: 'DURA/UPDATE',
+        type: 'D/UPDATE',
         payload: { REFRESH: prefix },
       });
       return duraStore;

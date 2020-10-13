@@ -9,7 +9,7 @@ export async function dispatchLoading<S>(
 ) {
   const dispatchTrue = (type: string) =>
     reduxStore.dispatch({
-      type: 'DURA/CHANGE_LOADING',
+      type: 'D/CHANGE_LOADING',
       payload: {
         k: type,
         v: {
@@ -20,7 +20,7 @@ export async function dispatchLoading<S>(
     });
   const dispatchFalse = (type: string) =>
     reduxStore.dispatch({
-      type: 'DURA/CHANGE_LOADING',
+      type: 'D/CHANGE_LOADING',
       payload: {
         k: type,
         v: {
@@ -32,7 +32,7 @@ export async function dispatchLoading<S>(
 
   const dispatchError = (type: string, e: Error) =>
     reduxStore.dispatch({
-      type: 'DURA/CHANGE_LOADING',
+      type: 'D/CHANGE_LOADING',
       payload: {
         k: type,
         v: {
