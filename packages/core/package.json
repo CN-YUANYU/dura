@@ -26,7 +26,7 @@
     "@dura/lub": "^4.0.0-alpha.11",
     "@dura/types": "^4.0.0-alpha.17",
     "@dura/utils": "^4.0.0-alpha.18",
-    "immer": "^7.0.9",
+    "immer": "^8.0.1",
     "invariant": ">=2.2.0"
   }
 }
